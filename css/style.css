@@ -116,7 +116,7 @@ body {
   position: absolute;
   right: 5px;
   top: 13px;
-  background-image: url("/img/arrow-down.svg");
+  background-image: url("../img/arrow-down.svg");
   width: 13px;
   height: 9px;
   background-size: cover;
