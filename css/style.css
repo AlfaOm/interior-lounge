@@ -64,6 +64,110 @@ body {
   overflow: hidden;
 }
 
+.page-header {
+  padding: 4px 0 10px 0;
+  border-bottom: 1px solid #f5d581;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__menu-wrapper {
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.menu-primary-container .menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+
+/* Отступы для пунктов меню первого уровня */
+.menu-primary-container .menu > .menu-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-primary-container .menu-item {
+  list-style: none;
+}
+
+.menu-primary-container .menu-item a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 25px;
+}
+
+.menu-primary-container .menu-item a:hover {
+  color: #9f7303;
+}
+
+.menu-primary-container .menu-item-has-children {
+  position: relative;
+}
+
+.menu-primary-container .menu-item-has-children::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  background-image: url("/img/arrow-down.svg");
+  width: 13px;
+  height: 9px;
+  background-size: cover;
+}
+
+.menu-primary-container .menu-item-has-children > a {
+  padding-right: 25px;
+}
+
+.menu-primary-container .sub-menu a {
+  padding: 0;
+}
+
+.menu-primary-container .sub-menu {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 25px;
+  min-width: 200px;
+  padding: 24px 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.menu-primary-container .menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.menu-primary-container .sub-menu .menu-item {
+  margin-bottom: 23px;
+}
+
+.menu-primary-container .sub-menu .menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-primary-container .menu-item-styled {
+  border: 1px solid #9f7303;
+  border-radius: 8px;
+}
+
+.menu-primary-container .menu-item-styled:hover {
+  background-color: #fffdf8;
+}
+
+.menu-primary-container .menu-item-styled:active {
+  background-color: #fff7e3;
+}
+
 .page-body {
   background-color: #fffdf8;
   padding: 60px 0;
